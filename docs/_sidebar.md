@@ -2,7 +2,7 @@
 	- [Basic Description - TLDR](basics/start.md)
 	- [Introduction to Keep Network & tBTC](basics/intro.md)
 	- [Community Tools](basics/tools.md)
-	- [All The Keeps Ref](basics/atk.md)
+	- [All The Keeps Guide](basics/atk.md)
 
 - **Key Reasons for Staking in Keep Network**
 	- [Project Characteristics](Reasons/reasons.md)
