@@ -1,12 +1,14 @@
 # All The Keeps: Guide for TBTC System Control
 
-
+<p align="center">
+  <img width="250" src="https://user-images.githubusercontent.com/68087535/97370062-f3d14b80-188c-11eb-989e-e84eb8146297.png">
+</p>
 
 ## Intro
 
 This document describes how to use the information from [AllTheKeeps](https://allthekeeps.com) site to support the most common workflows and functions associated with the tBTC System for the main participants listed below. It shows the up to date detailed information about the activitiy (Deposits and Redemptions contracts and states) and Network Operators (Used and Available Capacity), of the tBTC system.
 
-?< You can find details about most aspects (Purpose, Economics, Node Set Up and Operation, etc) related to the tBTC System in this site.
+?>You can find details about most aspects (Purpose, Economics, Node Set Up and Operation, etc) related to the tBTC System in this site.
 
 The tBTC System has three main participants:
 
@@ -24,7 +26,7 @@ The tBTC System has three main participants:
 As an ECDSA Node Operator you need to understand and monitor your participation in the Network:
 * Keeps signed by your Operator: this will determine the Fees and Rewards that you will be entitled to, and also the Risk you are exposed to.
 * Collateralization Ratio of each Deposit guaranteed by your Operator: 
-!<_Undercollateralization will lead to Liquidation and loss of bonds. You should redeem that Deposit to avoid Liquidation_
+!>_Undercollateralization will lead to Liquidation and loss of bonds. You should redeem that Deposit to avoid Liquidation_
 <p align="center">
   <img width="450" src="https://user-images.githubusercontent.com/68087535/96767623-2671d480-13b3-11eb-803d-c71fb39686ba.png">
 </p>
@@ -65,7 +67,7 @@ Here you can see all the active Operators, and selecting an Address, you can see
 * Keeps: a list of all Keeps signed by your Operator, in any state. The address shown for a Keep is the Deposit address.
 * Beacon Groups: a list of all the Random Beacon Groups in which your Operator participated. The groups are tracked by names (e.g. silver tapir) here to make it easy to understand if groups are different or the same (vs. an Address), as randomness is important for the integrity of the network.
 
-A Deposit can have the following Statuses during the Deposit, Active and Redeem Phases. 
+### A Deposit can have the following Statuses during the Deposit, Active and Redeem Phases. 
 
 Details can be found in the Appendix below.
 
@@ -88,7 +90,7 @@ _Redeem States_
 * Liquidation in Progress
 * Liquidated
 
-!< _You need to monitor and take action when a deposit enters any of the following three states_
+!>_You need to monitor and take action when a deposit enters any of the following three states_
 
 **Awaiting Funding Proof**
 
@@ -178,48 +180,5 @@ NOTE: there is a disincentive to return a signature, as the caller must pay for 
 `REDEEMED`
 
 
-
-
-
-
-
-
-
-
-
-
-# Deposits
-
-All TBTC that are minted on the [tBTC dApp](https://dapp.tbtc.network/deposit) are shown here.
-By that a deposit contract is generated with the lot size specified.
-
-<p align="center">
-  <img width="450" src="https://user-images.githubusercontent.com/68087535/96767623-2671d480-13b3-11eb-803d-c71fb39686ba.png">
-</p>
-
-
-Each deposit has a state :
-
-<p align="center">
-  <img width="450" src="https://docs.keep.network/tbtc/img/generated/deposit-state-machine.png">
-</p>
-
-
-
-
-Each deposit contract has its own details page :
-
-<p align="center">
-  <img width="450" src="https://user-images.githubusercontent.com/68087535/96794203-2930f180-13d4-11eb-86b3-7bac67569ab2.png">
-</p>
-
-
-- Deposit created
-- Signers have provided a Bitcoin address to receive the funds
-- Bitcoin address provided
-- Funded
-- Redemption Requested
-- Signers provided a redemption signature
-- The signers provided a signature for the redemption Bitcoin transaction.
 
 
