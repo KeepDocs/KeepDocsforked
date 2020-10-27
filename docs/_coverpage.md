@@ -1,15 +1,15 @@
 <!-- _coverpage.md -->
 <!--[a ver](assets/images/keepdocgraf.jpg)>
 <!-- [logo](https://miro.medium.com/max/1400/1*a1rZEF1awSz0wsKdL9SuGw.jpeg)-->
-![logok](https://user-images.githubusercontent.com/68087535/91909888-67d3e680-ec84-11ea-8e43-203fced81216.png)
-# Keepdocs.xyz
+![logok](https://user-images.githubusercontent.com/68087535/97370162-2713da80-188d-11eb-9a2a-4a48caac102b.png)
+#
 
-> Keep Network's Community-curated Documentation
+> Community Curated Documentation
 
-- Staking in Keep Network
-- Explanation, Roi, Comparisons & Options
-- Rewards, Economics, Slashing & Liquidation
-- Node Deployment, Operation, Troubleshooting & Risk Mitigation
+- :heavy_check_mark: Staking in Keep Network
+- :heavy_check_mark: All The Keeps Guide for TBTC Deposits/Redemptions control
+- :heavy_check_mark: Rewards, Economics, Comparisons, Slashing & Liquidation
+- :heavy_check_mark: Node Deployment, Operation, Troubleshooting & Risk Mitigation
 
 
 [GitHub](https://github.com/Estebank97/Keep-Node-Docs/)
