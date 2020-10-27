@@ -1,44 +1,63 @@
-# Intro
+# All The Keeps: Guide for TBTC System Control
+
+
+
+## Intro
 
 This document describes how to use the information from [AllTheKeeps](https://allthekeeps.com) site to support the most common workflows and functions associated with the tBTC System for the main participants listed below. It shows the up to date detailed information about the activitiy (Deposits and Redemptions contracts and states) and Network Operators (Used and Available Capacity), of the tBTC system.
 
-You can find details about most aspects (Purpose, Economics, Node Set Up and Operation, etc) related to the tBTC System in this [Keep Network Documentation Site](https://estebank97.github.io/Keep-Node-Docs/#/).
-
+?< You can find details about most aspects (Purpose, Economics, Node Set Up and Operation, etc) related to the tBTC System in this site.
 
 The tBTC System has three main participants:
 
-**Random Beacon Node Operators**: randomly create groups of Signers for New Keeps, which hold the Private Key that store the supplied Bitcoin
+- **Random Beacon Node Operators**: randomly create groups of Signers for New Keeps, which hold the Private Key that store the supplied Bitcoin
 
-**ECDSA Node Operators**: sign Keeps and support the BTC -> tBTC Supply Peg with staked KEEP tokens and bonded ETH
+- **ECDSA Node Operators**: sign Keeps and support the BTC -> tBTC Supply Peg with staked KEEP tokens and bonded ETH
 
-**tBTC Network Users (Minter/Redeemer)**: Move Bitcoin <-> Ethereum
+- **tBTC Network Users (Minter/Redeemer)**: Move Bitcoin <-> Ethereum
 
 
-# Workflows supported by All The Keeps
+## Workflows supported by All The Keeps
 
-**ECDSA Node Operator Management**
+### **ECDSA Node Operator Management**
 
 As an ECDSA Node Operator you need to understand and monitor your participation in the Network:
 * Keeps signed by your Operator: this will determine the Fees and Rewards that you will be entitled to, and also the Risk you are exposed to.
-* Collateralization Ratio of each Deposit guaranteed by your Operator: _Undercollateralization will lead to Liquidation and loss of bonds. You should redeem that Deposit to avoid Liquidation_
+* Collateralization Ratio of each Deposit guaranteed by your Operator: 
+!<_Undercollateralization will lead to Liquidation and loss of bonds. You should redeem that Deposit to avoid Liquidation_
+<p align="center">
+  <img width="450" src="https://user-images.githubusercontent.com/68087535/96767623-2671d480-13b3-11eb-803d-c71fb39686ba.png">
+</p>
 
-**Random Beacon Node Operator Management**
+### **Random Beacon Node Operator Management**
 
 As a Random Beacon Operator you need to understand and monitor your participation in the Network: 
 * Groups your Operator participates to randomly select Signers for new Keeps: this will determine the Fees and Rewards that you will be entitled to. There are no Risks associated with the Random Beacon operation.
+<p align="center">
+  <img width="450" src="https://user-images.githubusercontent.com/68087535/96767623-2671d480-13b3-11eb-803d-c71fb39686ba.png">
+</p>
 
-**Deposits Tracking**
+### **Deposits Tracking**
 
 As a Depositor/Redeemer of TBTC in the Keep Network you need to understand:
 * Status of your Deposit, both in the Bitcoin Chain as well as in the Ethereum Chain
+<p align="center">
+  <img width="450" src="https://user-images.githubusercontent.com/68087535/96767623-2671d480-13b3-11eb-803d-c71fb39686ba.png">
+</p>
 
-**tBTC System Governance Tracking**
+### **tBTC System Governance Tracking**
 
 Understand and track the main variables of the tBTC System Governance (BTC lot sizes, ETH/BTC ratio, etc.)
 
 The first workflow (ECDSA Node Operator Management) is the most important for a Node Operator as you need to actively monitor Activity and States and take actions to protect your investment. The other workflows are for monitoring and informational purposes only, no actions are required.
+<p align="center">
+  <img width="450" src="https://user-images.githubusercontent.com/68087535/96767623-2671d480-13b3-11eb-803d-c71fb39686ba.png">
+</p>
 
-# ECDSA Node Operator Management
+## ECDSA Node Operator Management
+**The first workflow (ECDSA Node Operator Management) is the most important for a Node Operator as you need to actively monitor Activity and States and take actions to protect your investment. The other workflows are for monitoring and informational purposes only, no actions are required.**
+
+
 Your Operator may be selected by a Random Beacon Group to participate as a signer in a Keep to hold a deposit of Bitcoin and mint TBTC.
 
 To monitor Deposits signed by your Operator, go to the [Operators](https://allthekeeps.com/operators) page.
@@ -46,7 +65,9 @@ Here you can see all the active Operators, and selecting an Address, you can see
 * Keeps: a list of all Keeps signed by your Operator, in any state. The address shown for a Keep is the Deposit address.
 * Beacon Groups: a list of all the Random Beacon Groups in which your Operator participated. The groups are tracked by names (e.g. silver tapir) here to make it easy to understand if groups are different or the same (vs. an Address), as randomness is important for the integrity of the network.
 
-A Deposit can have the following Statuses during the Deposit, Active and Redeem Phases. Details can be found in the Appendix below.
+A Deposit can have the following Statuses during the Deposit, Active and Redeem Phases. 
+
+Details can be found in the Appendix below.
 
 _Deposit States_
 * Awaiting Signer Setup
@@ -63,11 +84,11 @@ _Redeem States_
 * Awaiting Withdrawal Proof
 * Redemption Time Out
 * Redeemed
-* Courtesy Call (???)
-* Liquidation in Progress (???)
+* Courtesy Call
+* Liquidation in Progress
 * Liquidated
 
-_You need to monitor and take action when a deposit enters any of the following three states_
+!< _You need to monitor and take action when a deposit enters any of the following three states_
 
 **Awaiting Funding Proof**
 
@@ -93,7 +114,7 @@ This is being worked out in a later release of the tBTC system. Current solution
 **The risk for the User here are losing the tBTC Fees for starting the Process and for the Node Operator is the lost Ethereum Bond???**
 
 
-# Appendix: Deposit States details
+## Appendix: Deposit States details
 The details in this Appendix are taken from the [tBTC System Design Document](https://docs.keep.network/tbtc/index.html#_overview_2)
 
 Each DEPOSIT is a simple State Machine
@@ -102,7 +123,7 @@ Each DEPOSIT is a simple State Machine
   <img width="500" src="https://docs.keep.network/tbtc/img/generated/deposit-state-machine.png">
 </p>
 
-## Deposit Flow
+### Deposit Flow
 
 `START`
 - Deposit does not exist yet
@@ -137,9 +158,8 @@ NOTE: the timeout on this state should be relatively short. We want to make it r
 `ACTIVE`
 - TBTC is minted and active.
 
-## Redemption Flow
+### Redemption Flow
 
-States
 `AWAITING_WITHDRAWAL_SIGNATURE`
 - A redemption has been initiated
 - The signers MUST sign a digest
