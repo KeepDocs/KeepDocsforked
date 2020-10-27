@@ -15,7 +15,7 @@ As Ilias Hatzis introduces tBTC in his [story](https://medium.com/@iliashatzis/c
 
 Keep Team launched tBTC, which is a decentralized, trustless and insured custody system for Bitcoin that creates TBTC Ethereum ERC-20 tokens, with a 1:1 BTC supply peg. Bitcoin holders who want to spend their BTC on Ethereum and DeFi don’t have to trust custodians, aka signers, because signers have to deposit a bond higher then the value of the BTC they hold in custody. 
 
-?> You'll want to see this excelent [tBTC Explanatory Video](https://www.youtube.com/watch?v=cfmQiArg3B8) by Artem#4718 on Discord.
+!> You'll want to see this excelent [tBTC System Explanatory Video](https://www.youtube.com/watch?v=cfmQiArg3B8) by Artem#4718.
 
 Signers are randomly chosen of a larger network fo signing nodes and operate in groups fo three. The bond ensures that signers behavior in the system remains honest, at risk of losing their bond in case of fraud or undercollateralization.  If signers were to move funds unauthorized, leaving more TBTC outstanding than BTC in custody, the system would confiscate their bond to buy and burn an equivalent of TBTC from the market, bringing the amount of TBTC and BTC in custody in equilibrium.
 
