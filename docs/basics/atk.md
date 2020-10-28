@@ -6,9 +6,9 @@
 
 ## Intro
 
-This document describes how to use the information from [AllTheKeeps](https://allthekeeps.com) site to support the most common workflows and functions associated with the tBTC System for the main participants listed below. It shows the up to date detailed information about the activitiy (Deposits and Redemptions contracts and states) and Network Operators (Used and Available Capacity), of the tBTC system.
+This document describes how to use the information from [AllTheKeeps](https://allthekeeps.com) site to support the most common workflows and functions associated with the tBTC System for the main participants listed below. 
 
-?>You can find details about most aspects (Purpose, Economics, Node Set Up and Operation, etc) related to the tBTC System in this site.
+ATK shows the up to date detailed information about the activitiy (Deposits and Redemptions contracts and states) and Network Operators (Used and Available Capacity), of the tBTC system.
 
 The tBTC System has three main participants:
 
@@ -17,6 +17,10 @@ The tBTC System has three main participants:
 - **ECDSA Node Operators**: sign Keeps and support the BTC -> tBTC Supply Peg with staked KEEP tokens and bonded ETH
 
 - **tBTC Network Users (Minter/Redeemer)**: Move Bitcoin <-> Ethereum
+
+
+
+?>You can find details about most aspects related to the tBTC System like Purpose, Economics, Node Set Up and Operation, etc etc  in the other sections of this site.
 
 
 ## Workflows supported by All The Keeps
