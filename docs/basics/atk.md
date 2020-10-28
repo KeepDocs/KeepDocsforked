@@ -15,9 +15,9 @@ The tBTC System has three main participants:
 
 - **tBTC Network Users (Minter/Redeemer)**: Move Bitcoin <-> Ethereum
 
-- **Random Beacon Node Operators**: randomly create groups of Signers for New Keeps, which hold the Private Key that store the supplied Bitcoin
+- **Random Beacon Nodes**: combine the system with the purpose of randomly creating groups of Signers for new Keeps, which hold the Private Key that store the supplied Bitcoin.
 
-- **ECDSA Node Operators**: sign Keeps and support the BTC -> tBTC Supply Peg with staked KEEP tokens and bonded ETH
+- **ECDSA Nodes**: sign Keeps and support the BTC -> tBTC Supply Peg with staked KEEP tokens and bonded ETH.
 
 
 
@@ -46,7 +46,7 @@ As an ECDSA Node Operator you need to understand and monitor your participation 
 ### **Random Beacon Node Operator Management**
 
 As a Random Beacon Node Operator you need to understand and monitor your participation in the Network: 
-* Groups your Operator participates to randomly select Signers for new Keeps: this will determine the Fees and Rewards that you will be entitled to. There are no Risks associated with the Random Beacon operation.
+* Groups your Operator participates to randomly select Signers for new Keeps: this will determine the Fees and Rewards that you will be entitled to. Operating Random Beacon Nodes implies low risk, further details in the [Slashing & Liquidation](stakingdoc/slashing.md) section.
 <p align="center">
   <img width="450" src="https://user-images.githubusercontent.com/68087535/97456091-46efe080-1917-11eb-9e46-f70477483f41.png">
 </p>
