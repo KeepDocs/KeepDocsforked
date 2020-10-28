@@ -12,11 +12,12 @@ ATK shows the up to date detailed information about the activitiy (Deposits and 
 
 The tBTC System has three main participants:
 
+
+- **tBTC Network Users (Minter/Redeemer)**: Move Bitcoin <-> Ethereum
+
 - **Random Beacon Node Operators**: randomly create groups of Signers for New Keeps, which hold the Private Key that store the supplied Bitcoin
 
 - **ECDSA Node Operators**: sign Keeps and support the BTC -> tBTC Supply Peg with staked KEEP tokens and bonded ETH
-
-- **tBTC Network Users (Minter/Redeemer)**: Move Bitcoin <-> Ethereum
 
 
 
