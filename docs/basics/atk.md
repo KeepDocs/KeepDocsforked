@@ -26,25 +26,37 @@ The tBTC System has three main participants:
 As an ECDSA Node Operator you need to understand and monitor your participation in the Network:
 * Keeps signed by your Operator: this will determine the Fees and Rewards that you will be entitled to, and also the Risk you are exposed to.
 * Collateralization Ratio of each Deposit guaranteed by your Operator: 
+
 !>_Undercollateralization will lead to Liquidation and loss of bonds. You should redeem that Deposit to avoid Liquidation_
+
+* all operators view
 <p align="center">
-  <img width="450" src="https://user-images.githubusercontent.com/68087535/96767623-2671d480-13b3-11eb-803d-c71fb39686ba.png">
+  <img width="450" src="https://user-images.githubusercontent.com/68087535/97455238-68040180-1916-11eb-9d0b-500a7df6a90b.png">
+</p>
+* clicking on an operators address: single operator detailed view:
+<p align="center">
+  <img width="450" src="https://user-images.githubusercontent.com/68087535/97455512-b44f4180-1916-11eb-91d6-bd4ab3bad3bf.png">
 </p>
 
 ### **Random Beacon Node Operator Management**
 
-As a Random Beacon Operator you need to understand and monitor your participation in the Network: 
+As a Random Beacon Node Operator you need to understand and monitor your participation in the Network: 
 * Groups your Operator participates to randomly select Signers for new Keeps: this will determine the Fees and Rewards that you will be entitled to. There are no Risks associated with the Random Beacon operation.
 <p align="center">
-  <img width="450" src="https://user-images.githubusercontent.com/68087535/96767623-2671d480-13b3-11eb-803d-c71fb39686ba.png">
+  <img width="450" src="https://user-images.githubusercontent.com/68087535/97456091-46efe080-1917-11eb-9e46-f70477483f41.png">
 </p>
 
 ### **Deposits Tracking**
 
 As a Depositor/Redeemer of TBTC in the Keep Network you need to understand:
 * Status of your Deposit, both in the Bitcoin Chain as well as in the Ethereum Chain
+
 <p align="center">
   <img width="450" src="https://user-images.githubusercontent.com/68087535/96767623-2671d480-13b3-11eb-803d-c71fb39686ba.png">
+</p>
+* Clicking on a deposit, further details are shown :
+<p align="center">
+  <img width="450" src="https://user-images.githubusercontent.com/68087535/97453066-25412a00-1914-11eb-9695-e21895e99356.png">
 </p>
 
 ### **tBTC System Governance Tracking**
@@ -53,8 +65,21 @@ Understand and track the main variables of the tBTC System Governance (BTC lot s
 
 The first workflow (ECDSA Node Operator Management) is the most important for a Node Operator as you need to actively monitor Activity and States and take actions to protect your investment. The other workflows are for monitoring and informational purposes only, no actions are required.
 <p align="center">
-  <img width="450" src="https://user-images.githubusercontent.com/68087535/96767623-2671d480-13b3-11eb-803d-c71fb39686ba.png">
+  <img width="450" src="https://user-images.githubusercontent.com/68087535/97456206-66870900-1917-11eb-93e2-2aa4b9e751cf.png">
 </p>
+
+### Users Tracking
+Users interacting with the tBTC System are tracked here.
+<p align="center">
+  <img width="450" src="https://user-images.githubusercontent.com/68087535/97457124-3855f900-1918-11eb-90ea-4db321860097.png">
+</p>
+
+### Beacon Tracking
+Groups formed by the Random Beacon System and their behavior are tracked here.
+<p align="center">
+  <img width="450" src="https://user-images.githubusercontent.com/68087535/97457197-4ad03280-1918-11eb-8383-aa6f80abb398.png">
+</p>
+
 
 ## ECDSA Node Operator Management
 **The first workflow (ECDSA Node Operator Management) is the most important for a Node Operator as you need to actively monitor Activity and States and take actions to protect your investment. The other workflows are for monitoring and informational purposes only, no actions are required.**
@@ -92,10 +117,11 @@ _Redeem States_
 
 !>**You need to monitor and take action when a deposit enters any of the following three states :**
 
+<p>I will display &#10004;</p>
 **1. Awaiting Funding Proof**
 
 Sometimes this is created by latencies in the BTC network that are higher than the tBTC system defined time outs.
-This is being worked out in a later release of the tBTC system. Current solution is to contact the Keep Team in Discord.
+This is being worked out in a later release of the tBTC system. Contact the Keep Team in Discord for further asistance.
 
 
 **2. Courtesy Call (Pre-Liquidation)**
@@ -104,17 +130,18 @@ At the first threshold of 125% for the ETH/BTC ratio, a deposit enters pre-liqui
 
 If the deposit is not closed within 6 hours, or if the deposit collateral falls below 110% collateralization, liquidation will follow. This gives each signer an incentive to close the position before it becomes severely undercollateralized. Alternatively, if the ETHBTC ratio recovers such that the deposit becomes at least 125% collateralized during the 6 hours, the deposit is safe and is moved away from the pre-liquidation state.
 
-_Workflow to avoid Liquidation_
+**_Workflow to avoid Liquidation_**
 
 You need to close the deposit at risk: 
 * Acquire TBTC in the amount of the deposit (e.g. through the Decentralized Exchanges). You will use this TBTC to redeem the undercollateralized deposit. 
 * Start the Redemption from Deposit Details Page and click the "Redeem" Button. This will take you to the tBTC Dapp to finish the process
+
 ?>_It is recommended to either have TBTC or an equivalent amount easily and quickly available, as time is of the essence for avoiding Liquidation._
 
 **3. Awaiting Withdrawal Proof**
 
 Sometimes this is created by latencies in the BTC network that are higher than the tBTC system defined time outs.
-This is being worked out in a later release of the tBTC system. Current solution is to contact the Keep Team in Discord.
+This is being worked out in a later release of the tBTC system. Contact the Keep Team in Discord for further asistance.
 
 
 
