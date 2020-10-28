@@ -7,8 +7,8 @@
 > Community Curated Documentation
 
 - **Staking in Keep Network**
+- :heavy_check_mark: Overview, Rewards, Economics, Comparisons, Slashing & Liquidation
 - :heavy_check_mark: All The Keeps Guide for TBTC Deposits/Redemptions control
-- :heavy_check_mark: Rewards, Economics, Comparisons, Slashing & Liquidation
 - :heavy_check_mark: Node Deployment, Operation, Troubleshooting & Risk Mitigation
 
 
