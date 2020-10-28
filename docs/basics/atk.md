@@ -27,13 +27,13 @@ As an ECDSA Node Operator you need to understand and monitor your participation 
 * Keeps signed by your Operator: this will determine the Fees and Rewards that you will be entitled to, and also the Risk you are exposed to.
 * Collateralization Ratio of each Deposit guaranteed by your Operator: 
 
-!>_Undercollateralization will lead to Liquidation and loss of bonds. You should redeem that Deposit to avoid Liquidation_
+!>**_Undercollateralization will lead to Liquidation and loss of bonds. You should redeem that Deposit to avoid Liquidation_**
 
-* all operators view
+* All operators view
 <p align="center">
   <img width="450" src="https://user-images.githubusercontent.com/68087535/97455238-68040180-1916-11eb-9d0b-500a7df6a90b.png">
 </p>
-* clicking on an operators address: single operator detailed view:
+* Clicking on an operators address, single operator detailed view:
 <p align="center">
   <img width="450" src="https://user-images.githubusercontent.com/68087535/97455512-b44f4180-1916-11eb-91d6-bd4ab3bad3bf.png">
 </p>
@@ -117,7 +117,6 @@ _Redeem States_
 
 !>**You need to monitor and take action when a deposit enters any of the following three states :**
 
-<p>I will display &#10004;</p>
 **1. Awaiting Funding Proof**
 
 Sometimes this is created by latencies in the BTC network that are higher than the tBTC system defined time outs.
