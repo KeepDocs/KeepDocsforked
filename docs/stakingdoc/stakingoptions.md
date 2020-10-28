@@ -10,7 +10,8 @@ Many of you are already set up with a staking provider through other networks yo
 - Figment Networks, Yannik Folla (yannick@figment.network) 
 - Staked, Tim Ogilvie (togilvie@staked.us)
 - Bison Trails, Viktor Bunin (viktor@bisontrails.co)
-- Blockdaemon, Konstantin Richter (konstantin@blockdaemon.com) 
+- Blockdaemon, Konstantin Richter (konstantin@blockdaemon.com)
+- Low Fee Validation, Eduardo Agut (Bonsfi in Discord) is newest alternative, providing high value and fast answers to users.
 
 
 Please reach out to your staking provider rep and they’ll start to get you onboarded, and let us know if you need recommendations or introductions.
