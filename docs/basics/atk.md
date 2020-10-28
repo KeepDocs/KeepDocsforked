@@ -1,4 +1,4 @@
-# All The Keeps: Guide for TBTC System Control
+# All The Keeps: Guide for tBTC System Monitoring and Node Management
 
 <p align="center">
   <img width="250" src="https://user-images.githubusercontent.com/68087535/97370062-f3d14b80-188c-11eb-989e-e84eb8146297.png">
@@ -15,9 +15,9 @@ The tBTC System has three main participants:
 
 - **tBTC Network Users (Minter/Redeemer)**: Move Bitcoin <-> Ethereum
 
-- **Random Beacon Nodes**: combine the system with the purpose of randomly creating groups of Signers for new Keeps, which hold the Private Key that store the supplied Bitcoin.
+- **Random Beacon Nodes**: provides randomness for the tBTC system to create groups of Signers for new Keeps, which hold the Private Key that store the supplied Bitcoin.
 
-- **ECDSA Nodes**: sign Keeps and support the BTC -> tBTC Supply Peg with staked KEEP tokens and bonded ETH.
+- **ECDSA Nodes**: sign Keeps and support the BTC -> TBTC Supply Peg with staked KEEP tokens and bonded ETH.
 
 
 
@@ -130,7 +130,7 @@ This is being worked out in a later release of the tBTC system. Contact the Keep
 
 **2. Courtesy Call (Pre-Liquidation)**
 
-At the first threshold of 125% for the ETH/BTC ratio, a deposit enters pre-liquidation, also referred to as “courtesy call”. In this state, a deposit can be redeemed by anyone, even if the deposit is locked (see the sections on redemption and minting for more). Pre-liquidation indicates that the signers _**should close the deposit**_ or face forced liquidation after a pre-liquidation period. 
+At the first threshold of 125% for the ETH/BTC ratio, a deposit enters pre-liquidation, also referred to as “courtesy call”. In this state, a deposit can be redeemed by anyone, even if the deposit is locked (see the sections on redemption and minting for more). Pre-liquidation indicates that **_this deposit should be closed_** or face forced liquidation after a pre-liquidation period. **Any signer can close the deposit, no coordination is needed**.
 
 If the deposit is not closed within 6 hours, or if the deposit collateral falls below 110% collateralization, liquidation will follow. This gives each signer an incentive to close the position before it becomes severely undercollateralized. Alternatively, if the ETHBTC ratio recovers such that the deposit becomes at least 125% collateralized during the 6 hours, the deposit is safe and is moved away from the pre-liquidation state.
 
