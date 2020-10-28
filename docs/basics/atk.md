@@ -90,30 +90,32 @@ _Redeem States_
 * Liquidation in Progress
 * Liquidated
 
-!>_You need to monitor and take action when a deposit enters any of the following three states_
+!>**You need to monitor and take action when a deposit enters any of the following three states :**
 
-**Awaiting Funding Proof**
+**1. Awaiting Funding Proof**
 
 Sometimes this is created by latencies in the BTC network that are higher than the tBTC system defined time outs.
 This is being worked out in a later release of the tBTC system. Current solution is to contact the Keep Team in Discord.
-**The risk for the User here are losing the tBTC Fees for starting the Process and for the Node Operator is the lost Ethereum Transaction Fee???**
 
 
-**Courtesy Call (Pre-Liquidation)**
+**2. Courtesy Call (Pre-Liquidation)**
 
-At the first threshold of 125% for the ETH/BTC ratio, a deposit enters pre-liquidation, also referred to as “courtesy call”. In this state, a deposit can be redeemed by anyone, even if the deposit is locked (see the sections on redemption and minting for more). Pre-liquidation indicates that the signers _**should close the deposit**_ or face forced liquidation after a pre-liquidation period. If the deposit is not closed within 6 hours, or if the deposit collateral falls below 110% collateralization, liquidation will follow. This gives each signer an incentive to close the position before it becomes severely undercollateralized. Alternatively, if the ETHBTC ratio recovers such that the deposit becomes at least 125% collateralized during the 6 hours, the deposit is safe and is moved away from the pre-liquidation state.
+At the first threshold of 125% for the ETH/BTC ratio, a deposit enters pre-liquidation, also referred to as “courtesy call”. In this state, a deposit can be redeemed by anyone, even if the deposit is locked (see the sections on redemption and minting for more). Pre-liquidation indicates that the signers _**should close the deposit**_ or face forced liquidation after a pre-liquidation period. 
+
+If the deposit is not closed within 6 hours, or if the deposit collateral falls below 110% collateralization, liquidation will follow. This gives each signer an incentive to close the position before it becomes severely undercollateralized. Alternatively, if the ETHBTC ratio recovers such that the deposit becomes at least 125% collateralized during the 6 hours, the deposit is safe and is moved away from the pre-liquidation state.
 
 _Workflow to avoid Liquidation_
 
 You need to close the deposit at risk: 
-* Acquire TBTC in the amount of the deposit (e.g. through the Decentralized Exchanges). You will use this TBTC to redeem the undercollateralized deposit. _It is recommended to either have TBTC or an equivalent amount easily and quickly available, as time is of the essence for avoiding Liquidation._
+* Acquire TBTC in the amount of the deposit (e.g. through the Decentralized Exchanges). You will use this TBTC to redeem the undercollateralized deposit. 
 * Start the Redemption from Deposit Details Page and click the "Redeem" Button. This will take you to the tBTC Dapp to finish the process
+?>_It is recommended to either have TBTC or an equivalent amount easily and quickly available, as time is of the essence for avoiding Liquidation._
 
-**Awaiting Withdrawal Proof**
+**3. Awaiting Withdrawal Proof**
 
 Sometimes this is created by latencies in the BTC network that are higher than the tBTC system defined time outs.
 This is being worked out in a later release of the tBTC system. Current solution is to contact the Keep Team in Discord.
-**The risk for the User here are losing the tBTC Fees for starting the Process and for the Node Operator is the lost Ethereum Bond???**
+
 
 
 ## Appendix: Deposit States details
@@ -122,7 +124,7 @@ The details in this Appendix are taken from the [tBTC System Design Document](ht
 Each DEPOSIT is a simple State Machine
 
 <p align="center">
-  <img width="500" src="https://docs.keep.network/tbtc/img/generated/deposit-state-machine.png">
+  <img width="550" src="https://docs.keep.network/tbtc/img/generated/deposit-state-machine.png">
 </p>
 
 ### Deposit Flow
