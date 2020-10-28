@@ -1,8 +1,8 @@
-# All The Keeps: Guide for tBTC System Monitoring and Node Management
-
 <p align="center">
   <img width="250" src="https://user-images.githubusercontent.com/68087535/97370062-f3d14b80-188c-11eb-989e-e84eb8146297.png">
 </p>
+
+# Guide for tBTC System Monitoring and Node Control
 
 ## Intro
 
