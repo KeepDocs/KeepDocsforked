@@ -150,7 +150,7 @@ This is being worked out in a later release of the tBTC system. Contact the Keep
 
 
 ## Appendix: Deposit States details
-The details in this Appendix are taken from the [tBTC System Design Document](https://docs.keep.network/tbtc/index.html#_overview_2)
+The details in this Appendix are taken from the [tBTC System Design Document](https://docs.keep.network/tbtc/index.html#_deposit_and_redemption_state_machine)
 
 Each DEPOSIT is a simple State Machine
 
@@ -210,11 +210,12 @@ NOTE: there is a disincentive to return a signature, as the caller must pay for 
 - via an ECDSA or BTC fraud proof
 - via a state timeout
 
-`REDEEMED`
+`REDEEMED` or 
+`LIQUIDATED`
 
 ---
-`ATK is a creation of PythonMetaClass with contributions of the Community`[Source](https://keep-network.gitbook.io/staking-documentation/)
+`ATK is a creation of PythonMetaClass`[Source](https://allthekeeps.com/about)
 
-`Contributors to this guide: Ramaruro, EstebanK, Python MetaClass`
+`Contributors to this guide: Ramaruro, EstebanK, PythonMetaClass`
 
 
