@@ -212,6 +212,9 @@ NOTE: there is a disincentive to return a signature, as the caller must pay for 
 
 `REDEEMED`
 
+---
+`ATK is a creation of PythonMetaClass with contributions of the Community`[Source](https://keep-network.gitbook.io/staking-documentation/)
 
+`Contributors to this guide: Ramaruro, EstebanK, Python MetaClass`
 
 
