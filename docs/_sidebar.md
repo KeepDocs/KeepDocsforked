@@ -16,8 +16,6 @@
 	- [Staking Rewards](stakingdoc/rewards.md)
 	- [Slashing & Liquidation](stakingdoc/slashing.md)
 	- [Staking Economics](stakingdoc/economics.md)
-
-- **Staking Alternatives**
 	- [Staking with a provider](stakingdoc/stakingoptions.md)
 	- [Staking in House - Running your own Nodes](stakingdoc/stakingoptions.md)
 
